@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
 }
 header{
-    width: auto;
+    width: 100%;
     padding: 13px 50px;
     display: flex;
     justify-content: space-between;
@@ -1021,7 +1021,6 @@ header.active #bar{
     background-color: #02e1ff;
     width: 90%;
     margin: 0px auto;
-
 }
 .bg-footer .footer-flex{
     display: flex;
@@ -1113,7 +1112,7 @@ header.active #bar{
     background: var(--main-color);
     box-shadow: 0px 0px 1px 1px var(--main-color);
     border-color: #f9f9f9;
-    color: #eae5e5;
+    color: #FFF;
 }
 
 
