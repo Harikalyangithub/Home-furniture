@@ -84,5 +84,46 @@ function toTop(){
 }
 toTop();
 
+// About Section JAVASCRIPT
 
+// Intersection Observer for fade-in animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Start counting animation when section becomes visible
+            if (!entry.target.classList.contains('counted')) {
+                animateNumbers();
+                entry.target.classList.add('counted');
+            }
+        }
+    });
+}, { threshold: 0.2 });
+
+// Observe the about content section
+observer.observe(document.querySelector('.about-content'));
+
+// Animate numbers function
+function animateNumbers() {
+    const stats = document.querySelectorAll('.stat-number');
+    
+    stats.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const duration = 2000; // Animation duration in milliseconds
+        const step = target / (duration / 16); // Update every 16ms (60fps)
+        let current = 0;
+
+        const updateNumber = () => {
+            current += step;
+            if (current < target) {
+                stat.textContent = Math.round(current);
+                requestAnimationFrame(updateNumber);
+            } else {
+                stat.textContent = target;
+            }
+        };
+
+        updateNumber();
+    });
+}
 
