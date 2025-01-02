@@ -129,7 +129,7 @@ function animateNumbers() {
 
 // Adding Form Javascript
 
-/*document.getElementById('furnitureForm').addEventListener('submit', function(e) {
+document.getElementById('furnitureForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Reset errors
@@ -207,7 +207,7 @@ document.getElementById('interest').addEventListener('change', function() {
     }
 });
 
-*/
+
 
 document.getElementById('furnitureForm').addEventListener('submit', function(e) {
     e.preventDefault();

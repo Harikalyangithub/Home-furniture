@@ -357,7 +357,7 @@ header.active #bar{
 
 .big-shop{
     width: 90%;
-    margin: 150px auto; 
+    margin: 50px auto; 
 }
 .big-shop .shop-title{
     text-align: center;
@@ -1029,7 +1029,7 @@ header.active #bar{
     background-color: #20263E;
     width: 100%;
     margin: 32px auto 0;
-    padding:16px 32px;
+    padding: 2px 150px;
     color: #FFF;
 }
 .bg-footer .footer-flex{
@@ -1037,7 +1037,8 @@ header.active #bar{
     justify-content: space-between;
     grid-row-gap: 20px;
     flex-wrap: wrap;
-    margin: 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 .bg-footer .footer-flex .footer1{
     width: 24%;
@@ -1091,7 +1092,7 @@ header.active #bar{
 
 footer.footer {
     background: #20263E;
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 .copy {
@@ -1502,7 +1503,7 @@ body {
 }
 
 .about-section {
-    padding: 10px 0;
+    padding: 50px;
     background-color: #f9f9f9;
 }
 
@@ -1711,8 +1712,6 @@ body {
         font-size: 0.9rem;
     }
 }
-
- 
 
 
 
