@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
 }
 header{
-    width: 88%;
+    width: auto;
     padding: 13px 50px;
     display: flex;
     justify-content: space-between;
