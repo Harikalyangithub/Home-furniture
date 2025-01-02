@@ -129,6 +129,86 @@ function animateNumbers() {
 
 // Adding Form Javascript
 
+/*document.getElementById('furnitureForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Reset errors
+    document.querySelectorAll('.error').forEach(error => error.style.display = 'none');
+    
+    let isValid = true;
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const interest = document.getElementById('interest');
+    const message = document.getElementById('message');
+
+    // Validation
+    if (firstName.value.length < 2) {
+        document.getElementById('firstNameError').style.display = 'block';
+        isValid = false;
+    }
+
+    if (lastName.value.length < 2) {
+        document.getElementById('lastNameError').style.display = 'block';
+        isValid = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
+        document.getElementById('emailError').style.display = 'block';
+        isValid = false;
+    }
+
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phone.value.replace(/\D/g, ''))) {
+        document.getElementById('phoneError').style.display = 'block';
+        isValid = false;
+    }
+
+    if (!interest.value) {
+        document.getElementById('interestError').style.display = 'block';
+        isValid = false;
+    }
+
+    if (message.value.length < 10) {
+        document.getElementById('messageError').style.display = 'block';
+        isValid = false;
+    }
+
+    if (isValid) {
+        // Show loading
+        const loading = document.querySelector('.loading');
+        const submitBtn = document.querySelector('.submit-btn');
+        submitBtn.style.display = 'none';
+        loading.style.display = 'block';
+
+        // Simulate form submission
+        setTimeout(() => {
+            const form = document.getElementById('furnitureForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            loading.style.display = 'none';
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Reset form
+            form.reset();
+        }, 1500);
+    }
+});
+
+// Handle select element label animation
+document.getElementById('interest').addEventListener('change', function() {
+    if (this.value) {
+        this.classList.add('has-value');
+    } else {
+        this.classList.remove('has-value');
+    }
+});
+
+*/
+
 document.getElementById('furnitureForm').addEventListener('submit', function(e) {
     e.preventDefault();
     

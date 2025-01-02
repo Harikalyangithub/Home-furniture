@@ -16,7 +16,7 @@
     scroll-behavior: smooth;
 }
 header{
-    width: 100%;
+    width: 88%;
     padding: 13px 50px;
     display: flex;
     justify-content: space-between;
@@ -1018,8 +1018,10 @@ header.active #bar{
 }
 
 .bg-footer{
+    background-color: #02e1ff;
     width: 90%;
     margin: 0px auto;
+
 }
 .bg-footer .footer-flex{
     display: flex;
@@ -1055,7 +1057,7 @@ header.active #bar{
     width: 100%;
 }
 .bg-footer hr{
-    background: #f9f9f9;
+    background: #b6a2a2;
     margin: 15px 0px;
     height: 1px;
     width: 100%;
@@ -1111,7 +1113,7 @@ header.active #bar{
     background: var(--main-color);
     box-shadow: 0px 0px 1px 1px var(--main-color);
     border-color: #f9f9f9;
-    color: #FFF;
+    color: #eae5e5;
 }
 
 
@@ -1217,7 +1219,7 @@ body {
 
 /*Contact-Form-Section--*/
 
-*, *:before, *:after {
+*:before, *:after {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
