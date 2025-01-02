@@ -1015,6 +1015,16 @@ header.active #bar{
     }
 }
 
+.footer1{
+    text-align: center;
+}
+
+.footer-image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
 .bg-footer{
     background-color: #20263E;
     width: 100%;
@@ -1080,12 +1090,12 @@ header.active #bar{
 }
 
 footer.footer {
-    background: gray;
+    background: #20263E;
     padding: 1rem;
 }
 
 .copy {
-    background: gray;
+    background: #20263E;
     padding: 1rem;
     text-align: center;
     color: white;
