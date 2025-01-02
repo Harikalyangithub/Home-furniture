@@ -1019,8 +1019,9 @@ header.active #bar{
 
 .bg-footer{
     background-color: #02e1ff;
-    width: 90%;
-    margin: 0px auto;
+    width: 100%;
+    margin: 32px auto 0;
+    padding:16px 32px;
 }
 .bg-footer .footer-flex{
     display: flex;
@@ -1217,7 +1218,7 @@ body {
 }
 
 /*Contact-Form-Section--*/
-
+ 
 *:before, *:after {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -1449,6 +1450,9 @@ body {
     .app-title:after {
       display: none;
     }
+    .background{
+        margin: 0px;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -1460,7 +1464,7 @@ body {
       padding: 0;
     }
   }
-  
+   */
 
 /* About Section CSS */
 
@@ -1553,7 +1557,7 @@ body {
     margin-top: 40px;
 }
 
-.stat-item {
+.stats-item {
     text-align: center;
 }
 
@@ -1602,12 +1606,12 @@ body {
     .about-section {
         padding: 40px 0;
     }
-}
+} */
 
 /* Social media icon css code */
 
-.footer {
-    background-color: #9eb7c1;
+ .footer {
+    background-color: #76dce5;
     padding: 2rem 1rem;
     color: white;
     font-family: Arial, sans-serif;
@@ -1680,4 +1684,8 @@ body {
     }
 }
 
+ 
 
+
+
+ 
