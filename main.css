@@ -1678,3 +1678,22 @@ body {
 }
 
 
+/* added css */
+.container, 
+.row,
+[class*="col-"] {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* If using Bootstrap, you might also need */
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .row {
+        margin: 0;
+    }
+}
