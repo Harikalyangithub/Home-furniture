@@ -759,7 +759,6 @@ header.active #bar{
     background-size: cover;
     background-attachment: fixed;
     padding: 300px 0px;
-    margin: 100px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -888,7 +887,6 @@ header.active #bar{
 
 .bg-team{
     width: 100%;
-    margin: 100px 0px 0px;
     
 }
 .bg-team .team-title{
@@ -1018,10 +1016,11 @@ header.active #bar{
 }
 
 .bg-footer{
-    background-color: #02e1ff;
+    background-color: #20263E;
     width: 100%;
     margin: 32px auto 0;
     padding:16px 32px;
+    color: #FFF;
 }
 .bg-footer .footer-flex{
     display: flex;
@@ -1048,10 +1047,12 @@ header.active #bar{
 .footer-flex .footer1 li a{
     text-decoration: none;
     text-transform: capitalize;
-    color: #000;
+    color: #ffffff;
 }
 .footer-flex .footer1 .footer-logo{
     margin-top: 30px;
+    background: #ffffff;
+    padding: 1rem;
 }
 .footer1 .footer-logo img{
     width: 100%;
@@ -1065,15 +1066,29 @@ header.active #bar{
 .bg-footer .copy{
     margin: 15px 0px;
     text-align: center;
+    
 }
 .bg-footer .copy section{
     font-size: 14px;
     text-transform: capitalize;
+   
 }
 
 .bg-footer .copy span{
     font-weight: bold;
     color: var(--main-color);
+}
+
+footer.footer {
+    background: gray;
+    padding: 1rem;
+}
+
+.copy {
+    background: gray;
+    padding: 1rem;
+    text-align: center;
+    color: white;
 }
 
 /* media query  */
@@ -1239,7 +1254,7 @@ body {
   .background {
     display: flex;
     min-height: 100%;
-    margin: 200px;
+    margin: 60px;
   }
   
   .container {
@@ -1290,6 +1305,7 @@ body {
   
   .screen-header-button.close {
     background: #ed1c6f;
+    float: none;
   }
   
   .screen-header-button.maximize {
@@ -1629,6 +1645,8 @@ body {
 .footer-text {
     text-align: center;
     font-size: 1.1rem;
+    padding-top: 10px;
+    color: white;
 }
 
 .social-links {
