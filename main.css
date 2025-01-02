@@ -1601,8 +1601,80 @@ body {
     }
 }
 
+/* Social media icon css code */
 
+.footer {
+    background-color: #9eb7c1;
+    padding: 2rem 1rem;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
 
+.footer-text {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
 
 
