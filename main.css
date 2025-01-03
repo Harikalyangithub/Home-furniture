@@ -121,6 +121,67 @@ header.active #bar{
     }
 }
 
+.nav-items {
+    /*display: flex;*/
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-items {
+        gap: 1.5rem;
+    }
+    
+    .nav-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-items {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-item {
+        font-size: 0.9rem;
+    }
+}
 .big-bg{
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url(pic/banner1.jpg);
     background-position: center;
@@ -1018,6 +1079,14 @@ header.active #bar{
 .footer1{
     text-align: center;
 }
+.contact-info{
+    text-align: left;
+    padding-left: 70px;
+}
+
+.contact-item{
+    margin-bottom: 20px;
+}
 
 .footer-image{
     display: flex;
@@ -1551,11 +1620,12 @@ body {
 }
 
 .about-text {
+    text-align: center;
     flex: 1;
 }
 
 .subtitle {
-    color: #C5A880;
+    color: #207178;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -1564,6 +1634,9 @@ body {
 }
 
 .title {
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Fenix', serif;
     font-size: 42px;
     color: #333;
     margin-bottom: 20px;
@@ -1591,12 +1664,12 @@ body {
 .stat-number {
     font-size: 36px;
     font-weight: bold;
-    color: #C5A880;
+    color: #207178;
     margin-bottom: 10px;
 }
 
 .stat-label {
-    color: #666;
+    color: #207178;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
