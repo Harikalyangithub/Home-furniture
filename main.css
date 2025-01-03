@@ -1029,7 +1029,7 @@ header.active #bar{
     background-color: #20263E;
     width: 100%;
     margin: 32px auto 0;
-    padding: 2px 150px;
+    padding: 2px 16px;
     color: #FFF;
 }
 .bg-footer .footer-flex{
